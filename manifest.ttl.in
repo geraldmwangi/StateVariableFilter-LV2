@@ -4,4 +4,4 @@
 <http://github.com/geraldmwangi/StateVF>    
     a lv2:Plugin ;
     lv2:binary <statevf.so> ;
-	rdfs:seeAlso <statevf.ttl> .
+	rdfs:seeAlso <statevf.ttl>, <modguis.ttl>  .
