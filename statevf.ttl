@@ -41,7 +41,7 @@
 		lv2:index 0 ; 
 		lv2:symbol "cutoff" ;
 		morph:supportsType lv2:CVPort ;
-		lv2:name "CutOff"  ;
+		lv2:name "Cutoff Frequency"  ;
 # An lv2:ControlPort should always describe its default value, and usually a
 # minimum and maximum value.  Defining a range is not strictly required, but
 # should be done wherever possible to aid host support, particularly for UIs.
