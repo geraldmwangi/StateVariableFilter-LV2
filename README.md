@@ -6,6 +6,8 @@ Controlled by an expression pedal and with a damping factor ~ 0.1 the lowpass ou
 An interesting addition to this is to pipe the highpass through a reverb (set the wet parameter of the reverb to 100%) and the bandpass
 through a delay
 
+<img src="res/statevf.png" alt="image-20220403201352880" style="zoom:33%;" />
+
 
 ## Build
 You need the lv2 development headers and libraries. On ubuntu (or any debian derivativ) run
