@@ -44,6 +44,7 @@ ln -s /path/to/StateVariableFilter-LV2 .
 Build the plugin for modduo
 ```
 cd ~/mod-plugin-builder
+./build modduo StateVariableFilter-LV2-dirclean
 ./build modduo StateVariableFilter-LV2
 ```
 
