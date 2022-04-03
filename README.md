@@ -1,6 +1,10 @@
 # StateVF
 A state variable filter. This is a filter which output a highpass, bandpass and lowpass signal.
 The damping factor allows for resonant sounds when set near zero. TREAT WITH CAUTION, YOU CAN DAMAGE YOU EARS!
+The UI was implemented for the MOD Duo from moddevices.com, however the plugin loads well in other lv2 hosts.
+Controlled by an expression pedal and with a damping factor ~ 0.1 the lowpass output sounds like a traditional Wha-Wha effect.
+An interesting addition to this is to pipe the highpass through a reverb (set the wet parameter of the reverb to 100%) and the bandpass
+through a delay
 
 
 ## Build
@@ -34,7 +38,7 @@ LV2DIR=/path/to/lv2plugins make test
 
 ## Build for MOD Duo
 
-Install mod-plugin-builder. Then in the mod-plugin-builder/plugins/package create a link to the directory 
+Install mod-plugin-builder. Then in the directory mod-plugin-builder/plugins/package create a link to the directory 
 where this repo is cloned
 ```
 cd ~/mod-plugin-builder/plugins/package
