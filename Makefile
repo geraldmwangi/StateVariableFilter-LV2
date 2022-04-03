@@ -6,7 +6,7 @@ LV2URI=http://github.com/geraldmwangi/StateVF
 
 CFILES=$(SRC)/$(NAME).c
 
-COMPILEFLAGS= $(CFLAGS) -std=c99 -std=gnu99 -fPIC
+COMPILEFLAGS= $(CFLAGS) -std=c99 -std=gnu99 -fPIC -g
 
 
 all: $(NAME)
@@ -24,7 +24,7 @@ install: all
 ifdef LV2DIR
 	mkdir -p $(LV2DIR)/$(NAME).lv2
 	cp $(BUILD)/$(NAME).so $(LV2DIR)/$(NAME).lv2/
-	cp manifest.ttl.in $(LV2DIR)/$(NAME).lv2/manifest.ttl
+	cp manifest.ttl $(LV2DIR)/$(NAME).lv2/manifest.ttl
 	cp $(NAME).ttl $(LV2DIR)/$(NAME).lv2/$(NAME).ttl
 	cp modgui.ttl $(LV2DIR)/$(NAME).lv2/modgui.ttl
 	cp -R modgui $(LV2DIR)/$(NAME).lv2/

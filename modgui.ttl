@@ -1,22 +1,18 @@
-@prefix lv2:    <http://lv2plug.in/ns/lv2core#> .
 @prefix modgui: <http://moddevices.com/ns/modgui#> .
-
-###############################################################################
-## START http://github.com/geraldmwangi/StateVF
+@prefix lv2:    <http://lv2plug.in/ns/lv2core#> .
 
 <http://github.com/geraldmwangi/StateVF>
     modgui:gui [
         modgui:resourcesDirectory <modgui> ;
-        modgui:iconTemplate <modgui/icon-4-pole-resonant-low-pass.html> ;
-        modgui:stylesheet <modgui/stylesheet-4-pole-resonant-low-pass.css> ;
-        modgui:screenshot <modgui/screenshot-4-pole-resonant-low-pass.png> ;
-        modgui:thumbnail <modgui/thumbnail-4-pole-resonant-low-pass.png> ;
+        modgui:iconTemplate <modgui/icon-statevf.html> ;
+        modgui:stylesheet <modgui/stylesheet-statevf.css> ;
+        modgui:screenshot <modgui/screenshot-statevf.png> ;
+        modgui:thumbnail <modgui/thumbnail-statevf.png> ;
         modgui:brand "JimsonDrift" ;
         modgui:label "StateVF" ;
-        modgui:model "boxy" ;
-        modgui:panel "2-knobs" ;
-        modgui:color "wood2" ;
-        modgui:knob "black" ;
+        modgui:model "british" ;
+        modgui:panel "4-knobs" ;
+        modgui:color "metallic" ;
         modgui:port [
             lv2:index 0 ;
             lv2:symbol "cutoff" ;

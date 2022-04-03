@@ -31,3 +31,23 @@ Run
 ```bash
 LV2DIR=/path/to/lv2plugins make test
 ```
+
+## Build for MOD Duo
+
+Install mod-plugin-builder. Then in the mod-plugin-builder/plugins/package create a link to the directory 
+where this repo is cloned
+```
+cd ~/mod-plugin-builder/plugins/package
+ln -s /path/to/StateVariableFilter-LV2 .
+```
+
+Build the plugin for modduo
+```
+cd ~/mod-plugin-builder
+./build modduo StateVariableFilter-LV2
+```
+
+Connect your MOD Duo and push the plugin to the device:
+```bash
+./build modduo StateVariableFilter-LV2-publish
+```
